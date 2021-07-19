@@ -10,5 +10,7 @@ WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
 
+EXPOSE 5000
+
 # run the application
 CMD python3 app/webapp.py
